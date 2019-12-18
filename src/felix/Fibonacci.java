@@ -21,9 +21,9 @@ public class Fibonacci {
 			}
 		}
 		
-		 System.out.println("Fibonacci Series of "+inNum+" numbers: " + fibnum);
-		return fibnum;
+		// System.out.println("Fibonacci Series of "+inNum+" numbers: " + fibnum);
 		
+		return fibnum;
 	}
 	
 }

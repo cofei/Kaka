@@ -1,16 +1,21 @@
 package felix;
 
+import java.math.*;
+
 public class Kaka {
 
 	public static void main(String[] args) {
-		System.out.println("Hello world!");
+		int num = 20;
+		BigInteger fibnum;
 		
 		Fibonacci fib = new Fibonacci();
-		
-		fib.Sequence(10);
-		fib.Sequence(20);
-		fib.Sequence(36);
-		
+		BizzBuzz bb = new BizzBuzz(3, 5, fib.Sequence(num));
+
+		for (int c = 1; c <= 20; c ++) {
+			fibnum = fib.Sequence(c);
+			bb.Execute(fibnum);
+		}
+
 	}
 
 }
